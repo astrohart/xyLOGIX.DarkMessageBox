@@ -1,33 +1,34 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿using System;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
+// -----------------------------------------------------------------------------
+// Assembly metadata for xyLOGIX.DarkMessageBox
+// (c) 2025 xyLOGIX, LLC. All rights reserved.
+// Licensed under the MIT License.
+// -----------------------------------------------------------------------------
+
 [assembly: AssemblyTitle("xyLOGIX.DarkMessageBox")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A fully customizable dark-themed replacement for System.Windows.Forms.MessageBox, built for C# 7.3 and .NET Framework 4.8 applications.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("xyLOGIX, LLC")]
 [assembly: AssemblyProduct("xyLOGIX.DarkMessageBox")]
-[assembly: AssemblyCopyright("Copyright © xyLOGIX, LLC 2025")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © 2025 xyLOGIX, LLC. All rights reserved.")]
+[assembly: AssemblyTrademark("xyLOGIX")]
 [assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible
-// to COM components.  If you need to access a type in this assembly from
-// COM, set the ComVisible attribute to true on that type.
+// COM interop settings
 [assembly: ComVisible(false)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
+// If this project is exposed to COM, the following GUID is used
 [assembly: Guid("6bf60088-8294-4aad-8518-8345d0d18324")]
 
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version
-//      Build Number
-//      Revision
-//
+// Assembly versioning
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+// CLS compliance and visibility
+[assembly: CLSCompliant(true)]
+
+// Internals visible to unit testing project (if you want, optional)
+//[assembly: InternalsVisibleTo("xyLOGIX.DarkMessageBox.Tests")]
