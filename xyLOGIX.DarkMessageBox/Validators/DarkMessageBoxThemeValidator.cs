@@ -40,6 +40,11 @@ namespace xyLOGIX.DarkMessageBox.Validators
                 Debug.WriteLine(ex);
                 return false;
             }
+            finally
+            {
+                // ❸ Always restore the caller’s original metrics/theme
+                DarkMessageBoxThemeManager.RevertToPreviousTheme();
+            }
         }
 
         /// <summary>
