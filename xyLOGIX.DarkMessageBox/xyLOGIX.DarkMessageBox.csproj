@@ -81,6 +81,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="newxylogix.ICO" />
+    <None Include="Resources\michelangelo.ICO" />
+    <None Include="Resources\bart-simpson-logo-vector1.ICO" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
