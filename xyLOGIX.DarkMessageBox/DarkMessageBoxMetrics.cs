@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -140,16 +141,18 @@ namespace xyLOGIX.DarkMessageBox
         /// </remarks>
         public static FixedSizeDictionary<DialogResult, string>
             ButtonTexts { [DebuggerStepThrough] get; } =
-            new FixedSizeDictionary<DialogResult, string>
-            {
-                { DialogResult.OK, "OK" },
-                { DialogResult.Cancel, "Cancel" },
-                { DialogResult.Yes, "&Yes" },
-                { DialogResult.No, "&No" },
-                { DialogResult.Abort, "&Abort" },
-                { DialogResult.Retry, "&Retry" },
-                { DialogResult.Ignore, "&Ignore" }
-            };
+            new FixedSizeDictionary<DialogResult, string>(
+                new Dictionary<DialogResult, string>
+                {
+                    { DialogResult.OK, "OK" },
+                    { DialogResult.Cancel, "Cancel" },
+                    { DialogResult.Yes, "&Yes" },
+                    { DialogResult.No, "&No" },
+                    { DialogResult.Abort, "&Abort" },
+                    { DialogResult.Retry, "&Retry" },
+                    { DialogResult.Ignore, "&Ignore" }
+                }
+            );
 
         /// <summary>
         /// Gets or sets the minimum width of a button.  Wider captions automatically
@@ -535,7 +538,6 @@ namespace xyLOGIX.DarkMessageBox
             MessageBodyIcon = null;
             WindowIcon = null;
 
-            ButtonTexts.Clear();
             ButtonTexts[DialogResult.OK] = "OK";
             ButtonTexts[DialogResult.Cancel] = "Cancel";
             ButtonTexts[DialogResult.Yes] = "&Yes";
