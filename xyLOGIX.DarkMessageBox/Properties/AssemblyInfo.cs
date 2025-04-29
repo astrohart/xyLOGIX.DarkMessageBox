@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 // -----------------------------------------------------------------------------
 // Assembly metadata for xyLOGIX.DarkMessageBox
-// (c) 2025 xyLOGIX, LLC. All rights reserved.
+// Copyright © 2025 xyLOGIX, LLC. All rights reserved.
 // Licensed under the MIT License.
 // -----------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("A fully customizable dark-themed replacement for System.Windows.Forms.MessageBox, built for C# 7.3 and .NET Framework 4.8 applications.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("xyLOGIX, LLC")]
-[assembly: AssemblyProduct("xyLOGIX.DarkMessageBox")]
+[assembly: AssemblyProduct("xyLOGIX Dark-Themed and Skinnable MessageBox Replacement Component")]
 [assembly: AssemblyCopyright("Copyright © 2025 xyLOGIX, LLC. All rights reserved.")]
 [assembly: AssemblyTrademark("xyLOGIX")]
 [assembly: AssemblyCulture("")]
@@ -29,6 +29,3 @@ using System.Runtime.InteropServices;
 
 // CLS compliance and visibility
 [assembly: CLSCompliant(true)]
-
-// Internals visible to unit testing project (if you want, optional)
-//[assembly: InternalsVisibleTo("xyLOGIX.DarkMessageBox.Tests")]
