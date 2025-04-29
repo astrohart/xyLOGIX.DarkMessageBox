@@ -53,6 +53,7 @@
     <Compile Include="DarkMessageBox.cs" />
     <Compile Include="DarkMessageBoxMetrics.cs" />
     <Compile Include="DarkMessageBoxThemeManager.cs" />
+    <Compile Include="FixedSizeDictionary.cs" />
     <Compile Include="Interfaces\IDarkMessageBoxTheme.cs" />
     <Compile Include="InternalDarkMessageBox.cs">
       <SubType>Form</SubType>
