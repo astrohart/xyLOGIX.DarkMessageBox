@@ -1,14 +1,36 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
 using xyLOGIX.DarkMessageBox.Interfaces;
 
 namespace xyLOGIX.DarkMessageBox.Themes
 {
     /// <summary>
-    /// A standard default theme for <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> dialogs.
+    /// A standard default theme for
+    /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> dialogs.
     /// </summary>
-    public sealed class DefaultDarkMessageBoxTheme : IDarkMessageBoxTheme
+    public sealed class ProfessionalDarkTheme : IDarkMessageBoxTheme
     {
+        /// <summary>
+        /// Empty, <c>static</c> constructor to prohibit direct allocation of this class.
+        /// </summary>
+        static ProfessionalDarkTheme() { }
+
+        /// <summary>
+        /// Empty, <c>private</c> constructor to prohibit direct allocation of this class.
+        /// </summary>
+        private ProfessionalDarkTheme() { }
+
+        /// <summary>
+        /// Gets a reference to the one and only instance of the object that implements the
+        /// <see cref="T:xyLOGIX.DarkMessageBox.Interfaces.IDarkMessageBoxTheme" />
+        /// interface.
+        /// </summary>
+        public static IDarkMessageBoxTheme Instance
+        {
+            [DebuggerStepThrough] get;
+        } = new ProfessionalDarkTheme();
+
         public void Apply()
         {
             DarkMessageBoxMetrics.FormBackgroundColor =
