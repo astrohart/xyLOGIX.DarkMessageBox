@@ -491,9 +491,10 @@ namespace xyLOGIX.DarkMessageBox
 
             _messageLabel = new Label
             {
-                Location = new Point(60, 15),
-                MaximumSize = new Size(400, 0),
-                AutoSize = true
+                Location     = new Point(60, 15),
+                MaximumSize  = new Size(400, 0),
+                AutoSize     = true,
+                ForeColor    = DarkMessageBoxMetrics.MessageTextColor // ← here
             };
             Controls.Add(_messageLabel);
 
@@ -666,6 +667,9 @@ namespace xyLOGIX.DarkMessageBox
         {
             if (!(sender is Button btn) || AcceptButton != btn) return;
 
+            var g      = e.Graphics;
+            var bounds = btn.ClientRectangle;
+
             if (DarkMessageBoxMetrics.HighlightDefaultButtonBackground)
             {
                 using (var brush = new SolidBrush(
@@ -674,6 +678,22 @@ namespace xyLOGIX.DarkMessageBox
                 {
                     e.Graphics.FillRectangle(brush, btn.ClientRectangle);
                 }
+
+                using (var borderPen = new Pen(
+                           DarkMessageBoxMetrics.DefaultButtonBorderColor, 1))
+                {
+                    g.DrawRectangle(borderPen, 0, 0, bounds.Width - 1, bounds.Height - 1);
+                }
+
+                TextRenderer.DrawText(
+                    g,
+                    btn.Text,
+                    btn.Font,
+                    bounds,
+                    DarkMessageBoxMetrics.ButtonTextColor,
+                    TextFormatFlags.HorizontalCenter |
+                    TextFormatFlags.VerticalCenter   |
+                    TextFormatFlags.SingleLine);
             }
             else
             {
