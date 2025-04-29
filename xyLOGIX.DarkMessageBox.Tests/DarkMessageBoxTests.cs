@@ -138,15 +138,14 @@ namespace xyLOGIX.DarkMessageBox.Tests
             DarkMessageBoxThemeManager.ApplyTheme(BartSimpsonTheme.Instance);
             DarkMessageBox.Show(
                 "Eat my shorts, man!", "Bart Simpson Test",
-                MessageBoxButtons.OKCancel, MessageBoxIcon.Information,
-                MessageBoxDefaultButton.Button1, 2000
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Information
             );
 
             // Apply Cowabunga Theme
             DarkMessageBoxThemeManager.ApplyTheme(CowabungaTheme.Instance);
             DarkMessageBox.Show(
                 "Cowabunga, dude!", "TMNT Test", MessageBoxButtons.YesNoCancel,
-                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2, 2000
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2
             );
 
             // Restore Default Professional Theme
@@ -156,7 +155,7 @@ namespace xyLOGIX.DarkMessageBox.Tests
             DarkMessageBox.Show(
                 "Theme has been reset to defaults.", "Default Theme",
                 MessageBoxButtons.OK, MessageBoxIcon.Information,
-                MessageBoxDefaultButton.Button1, 2000
+                MessageBoxDefaultButton.Button1
             );
         }
     }
