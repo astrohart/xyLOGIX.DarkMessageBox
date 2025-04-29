@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using xyLOGIX.DarkMessageBox.Interfaces;
+using xyLOGIX.DarkMessageBox.Properties;
 
 namespace xyLOGIX.DarkMessageBox.Themes
 {
@@ -33,17 +34,21 @@ namespace xyLOGIX.DarkMessageBox.Themes
         } = new BartSimpsonTheme();
 
         /// <summary>
-        /// Applies the theme to <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics" />.
+        /// Applies the theme to
+        /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics" />.
         /// </summary>
         public void Apply()
         {
             DarkMessageBoxMetrics.FormBackgroundColor =
-                Color.FromArgb(30, 30, 30);
+                Color.FromArgb(255, 246, 163); // #FFF6A3
             DarkMessageBoxMetrics.FooterBackgroundColor =
-                Color.FromArgb(50, 50, 50);
+                Color.FromArgb(239, 220, 112); // #EFDC70
             DarkMessageBoxMetrics.ButtonBackgroundColor = Color.DarkGoldenrod;
-            DarkMessageBoxMetrics.ButtonTextColor = Color.Black;
+            DarkMessageBoxMetrics.ButtonTextColor =
+                Color.FromArgb(31, 31, 31); // #1F1F1F
             DarkMessageBoxMetrics.ButtonBorderColor = Color.Goldenrod;
+            DarkMessageBoxMetrics.MessageTextColor =
+                Color.FromArgb(31, 31, 31); // #1F1F1F
 
             DarkMessageBoxMetrics.HighlightDefaultButtonBackground = true;
             DarkMessageBoxMetrics.DefaultButtonBackgroundColor = Color.Gold;
@@ -67,7 +72,8 @@ namespace xyLOGIX.DarkMessageBox.Themes
                 "&Whatever!";
 
             // Optional: set a funny Bart icon if you want
-            // DarkMessageBoxMetrics.MessageBodyIcon = new Icon("bart.ico");
+            DarkMessageBoxMetrics.MessageBodyIcon =
+                Resources.bart_simpson_logo_vector1;
         }
     }
 }
