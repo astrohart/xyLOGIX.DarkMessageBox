@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using xyLOGIX.DarkMessageBox.Interfaces;
+using xyLOGIX.DarkMessageBox.Properties;
 
 namespace xyLOGIX.DarkMessageBox.Themes
 {
@@ -35,10 +36,12 @@ namespace xyLOGIX.DarkMessageBox.Themes
         /// </summary>
         public void Apply()
         {
+            DarkMessageBoxMetrics.Reset();
+
             DarkMessageBoxMetrics.FormBackgroundColor =
-                Color.FromArgb(20, 20, 20);
+                Color.FromArgb(88,136,245);
             DarkMessageBoxMetrics.FooterBackgroundColor =
-                Color.FromArgb(40, 40, 40);
+                Color.FromArgb(213,99,44);
             DarkMessageBoxMetrics.ButtonBackgroundColor = Color.DarkSeaGreen;
             DarkMessageBoxMetrics.ButtonTextColor = Color.Black;
             DarkMessageBoxMetrics.ButtonBorderColor = Color.MediumSeaGreen;
@@ -61,8 +64,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.ButtonTexts[DialogResult.Ignore] =
                 "&Shell Shock!";
 
-            // Optional: TMNT icon
-            // DarkMessageBoxMetrics.MessageBodyIcon = new Icon("tmnt.ico");
+            DarkMessageBoxMetrics.MessageBodyIcon = Resources.michelangelo;
         }
     }
 }
