@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using xyLOGIX.DarkMessageBox.Interfaces;
 
@@ -33,9 +33,8 @@ namespace xyLOGIX.DarkMessageBox.Themes
 
         private readonly int _buttonWidth = DarkMessageBoxMetrics.ButtonWidth;
 
-        // ---- button captions ----
-        private readonly Dictionary<DialogResult, string> _captions =
-            new Dictionary<DialogResult, string>(
+        private readonly FixedSizeDictionary<DialogResult, string> _captions =
+            new FixedSizeDictionary<DialogResult, string>(
                 DarkMessageBoxMetrics.ButtonTexts
             );
 
@@ -135,8 +134,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.WindowIcon = _windowIcon;
             DarkMessageBoxMetrics.MessageBodyIcon = _bodyIcon;
 
-            DarkMessageBoxMetrics.ButtonTexts.Clear();
-            foreach (var kv in _captions)
+            foreach (var kv in _captions.ToArray())
                 DarkMessageBoxMetrics.ButtonTexts[kv.Key] = kv.Value;
         }
     }
