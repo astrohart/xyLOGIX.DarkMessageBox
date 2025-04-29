@@ -61,6 +61,16 @@ namespace xyLOGIX.DarkMessageBox.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon bart_simpson_logo_vector1 {
+            get {
+                object obj = ResourceManager.GetObject("bart_simpson_logo_vector1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DialogResult.None passed to AddButton().  We do not know what to do with this value..
         /// </summary>
         internal static string Error_Invalid_DialogResult {
@@ -75,6 +85,16 @@ namespace xyLOGIX.DarkMessageBox.Properties {
         internal static string Error_UnableToDetermineButtonText {
             get {
                 return ResourceManager.GetString("Error_UnableToDetermineButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon michelangelo {
+            get {
+                object obj = ResourceManager.GetObject("michelangelo", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
