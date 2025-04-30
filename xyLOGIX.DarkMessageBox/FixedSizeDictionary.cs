@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace xyLOGIX.DarkMessageBox
 {
@@ -51,7 +52,9 @@ namespace xyLOGIX.DarkMessageBox
         /// <see cref="T:System.Collections.Generic.ICollection`1" />.
         /// </returns>
         public int Count
-            => _inner.Count;
+        {
+            [DebuggerStepThrough] get => _inner.Count;
+        }
 
         /// <summary>
         /// Gets a value indicating whether the
@@ -63,7 +66,11 @@ namespace xyLOGIX.DarkMessageBox
         /// otherwise, <see langword="false" />.
         /// </returns>
         public bool IsReadOnly
-            => false; // we *are* writable
+        {
+            [DebuggerStepThrough] get => false;
+
+            // we *are* writable
+        }
 
         /// <summary>Gets or sets the element with the specified key.</summary>
         /// <param name="key">The key of the element to get or set.</param>
@@ -81,7 +88,8 @@ namespace xyLOGIX.DarkMessageBox
         /// </exception>
         public TValue this[TKey key]
         {
-            get => _inner[key];
+            [DebuggerStepThrough] get => _inner[key];
+            [DebuggerStepThrough]
             set
             {
                 if (!_inner.ContainsKey(key)) ThrowAdd();
@@ -100,7 +108,10 @@ namespace xyLOGIX.DarkMessageBox
         /// <see cref="T:System.Collections.Generic.IDictionary`2" />.
         /// </returns>
         public ICollection<TKey> Keys
-            => _inner.Keys;
+        {
+            [DebuggerStepThrough] 
+            get { return _inner.Keys; }
+        }
 
         /// <summary>
         /// Gets an <see cref="T:System.Collections.Generic.ICollection`1" />
@@ -113,7 +124,10 @@ namespace xyLOGIX.DarkMessageBox
         /// <see cref="T:System.Collections.Generic.IDictionary`2" />.
         /// </returns>
         public ICollection<TValue> Values
-            => _inner.Values;
+        {
+            [DebuggerStepThrough] 
+            get { return _inner.Values; }
+        }
 
         /// <summary>
         /// Adds an item to the
