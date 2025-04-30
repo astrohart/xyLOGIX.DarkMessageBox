@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 // -----------------------------------------------------------------------------
 // Assembly metadata for xyLOGIX.DarkMessageBox
-// Copyright © 2025 xyLOGIX, LLC. All rights reserved.
+// Copyright © 2025 by Dr. Brian C. Hart and xyLOGIX, LLC. All rights reserved.
 // Licensed under the MIT License.
 // -----------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("xyLOGIX, LLC")]
 [assembly: AssemblyProduct("xyLOGIX Dark-Themed and Skinnable MessageBox Replacement Component")]
-[assembly: AssemblyCopyright("Copyright © 2025 xyLOGIX, LLC. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright © 2025 by Dr. Brian C. Hart and xyLOGIX, LLC. All rights reserved.")]
 [assembly: AssemblyTrademark("xyLOGIX")]
 [assembly: AssemblyCulture("")]
 
