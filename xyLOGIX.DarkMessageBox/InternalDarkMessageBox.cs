@@ -247,8 +247,15 @@ namespace xyLOGIX.DarkMessageBox
         /// <c>The Windows User Interface Guidelines for Software Design</c>, Microsoft
         /// Press, 1995.
         /// </summary>
+        /// <remarks>
+        /// If the value of the <see cref="P:System.Windows.Forms.Form.Text" />
+        /// property is <see langword="null" />, blank, or the
+        /// <see cref="F:System.String.Empty" /> value, then this method takes no action.
+        /// </remarks>
         private void AutoSizeForm()
         {
+            if (string.IsNullOrWhiteSpace(Text)) return;
+
             var captionWidth = TextRenderer.MeasureText(Text, Font)
                                            .Width + 40;
             var messageWidth =
@@ -319,6 +326,8 @@ namespace xyLOGIX.DarkMessageBox
         /// <see cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.WindowIcon" />
         /// property is <see langword="null" />, then no icon is set and the message box is
         /// set to not appear in the system Taskbar.
+        /// <para />
+        /// <b>NOTE:</b> This method MUST be called from the constructor.
         /// </remarks>
         private void ConfigureWindowIcon()
         {
@@ -398,6 +407,27 @@ namespace xyLOGIX.DarkMessageBox
             );
         }
 
+        /// <summary>
+        /// Attempts to format the specified dialog <paramref name="result" /> value as
+        /// text, optionally adding a <c>&amp;</c> character before the first letter,
+        /// except for the <see cref="F:System.Windows.Forms.DialogResult.OK" /> and
+        /// <see cref="F:System.Windows.Forms.DialogResult.Cancel" /> value(s).
+        /// </summary>
+        /// <param name="result">
+        /// (Required.) One of the <see cref="T:System.Windows.Forms.DialogResult" />
+        /// enumeration value(s) that identifies the result of the user clicking the
+        /// corresponding button.
+        /// </param>
+        /// <remarks>
+        /// If the <see cref="F:System.Windows.Forms.DialogResult.None" /> value
+        /// is passed for the argument of the <paramref name="result" /> parameter, then
+        /// this method returns the <see cref="F:System.String.Empty" /> value.
+        /// </remarks>
+        /// <returns>
+        /// If successful, a <see cref="T:System.String" /> that is to be used for
+        /// the caption of the corresponding button; otherwise, the
+        /// <see cref="F:System.String.Empty" /> value will be returned.
+        /// </returns>
         private string FormatDialogResultAsButtonText(DialogResult result)
         {
             /*
@@ -491,10 +521,10 @@ namespace xyLOGIX.DarkMessageBox
 
             _messageLabel = new Label
             {
-                Location     = new Point(60, 15),
-                MaximumSize  = new Size(400, 0),
-                AutoSize     = true,
-                ForeColor    = DarkMessageBoxMetrics.MessageTextColor // ← here
+                Location = new Point(60, 15),
+                MaximumSize = new Size(400, 0),
+                AutoSize = true,
+                ForeColor = DarkMessageBoxMetrics.MessageTextColor // ← here
             };
             Controls.Add(_messageLabel);
 
@@ -667,7 +697,7 @@ namespace xyLOGIX.DarkMessageBox
         {
             if (!(sender is Button btn) || AcceptButton != btn) return;
 
-            var g      = e.Graphics;
+            var g = e.Graphics;
             var bounds = btn.ClientRectangle;
 
             if (DarkMessageBoxMetrics.HighlightDefaultButtonBackground)
@@ -680,20 +710,20 @@ namespace xyLOGIX.DarkMessageBox
                 }
 
                 using (var borderPen = new Pen(
-                           DarkMessageBoxMetrics.DefaultButtonBorderColor, 1))
+                           DarkMessageBoxMetrics.DefaultButtonBorderColor, 1
+                       ))
                 {
-                    g.DrawRectangle(borderPen, 0, 0, bounds.Width - 1, bounds.Height - 1);
+                    g.DrawRectangle(
+                        borderPen, 0, 0, bounds.Width - 1, bounds.Height - 1
+                    );
                 }
 
                 TextRenderer.DrawText(
-                    g,
-                    btn.Text,
-                    btn.Font,
-                    bounds,
+                    g, btn.Text, btn.Font, bounds,
                     DarkMessageBoxMetrics.ButtonTextColor,
                     TextFormatFlags.HorizontalCenter |
-                    TextFormatFlags.VerticalCenter   |
-                    TextFormatFlags.SingleLine);
+                    TextFormatFlags.VerticalCenter | TextFormatFlags.SingleLine
+                );
             }
             else
             {
