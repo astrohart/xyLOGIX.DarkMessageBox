@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using xyLOGIX.DarkMessageBox.Interfaces;
 using xyLOGIX.DarkMessageBox.Themes;
 
@@ -27,13 +28,20 @@ namespace xyLOGIX.DarkMessageBox
         /// <summary>
         /// Gets the currently active theme.
         /// </summary>
-        public static IDarkMessageBoxTheme CurrentTheme { get; private set; } =
-            ProfessionalDarkTheme.Instance;
+        public static IDarkMessageBoxTheme CurrentTheme
+        {
+            [DebuggerStepThrough] get;
+            [DebuggerStepThrough] private set;
+        } = ProfessionalDarkTheme.Instance;
 
         /// <summary>
         /// Gets the previously active theme.
         /// </summary>
-        public static IDarkMessageBoxTheme PreviousTheme { get; private set; }
+        public static IDarkMessageBoxTheme PreviousTheme
+        {
+            [DebuggerStepThrough] get;
+            [DebuggerStepThrough] private set;
+        }
 
         /// <summary>
         /// Applies the specified theme, remembering the previously active one.
