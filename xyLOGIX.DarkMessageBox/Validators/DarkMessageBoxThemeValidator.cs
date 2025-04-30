@@ -42,7 +42,7 @@ namespace xyLOGIX.DarkMessageBox.Validators
             }
             finally
             {
-                // ❸ Always restore the caller’s original metrics/theme
+                // Always restore the caller’s original metrics/theme
                 DarkMessageBoxThemeManager.RevertToPreviousTheme();
             }
         }
