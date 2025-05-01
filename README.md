@@ -48,43 +48,43 @@ You're probably dying to know what the default Dark-themed message boxes provide
 
 Here's what a simple message box looks like:
 
-![Fig01](images/fig01.png)
+![Fig01](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig01.png)
 
 **Figure 1.** Simple **OK** message box.
 
 And here's what a message box with a question-mark icon, and **OK** and **Cancel** buttons looks like:
 
-![Fig02](images/fig02.png)
+![Fig02](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig02.png)
 
 **Figure 2.** Message box with **OK** and **Cancel** buttons and a question-mark icon.
 
 Now, let's see what a message box that has the warning/exclamation-mark icon, and **Yes** and **No** buttons looks like:
 
-![Fig03](images/fig03.png)
+![Fig03](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig03.png)
 
 **Figure 3.** Message box with **Yes** and **No** buttons and an exclamation-mark icon.
 
 Now, let's see what we get when we specifiy `MessageBoxIcon.Question` and `MessageBoxButtons.YesNoCancel`:
 
-![Fig04](images/fig04.png)
+![Fig04](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig04.png)
 
 **Figure 4.** Message box with **Yes**, **No**, and **Cancel** buttons and a question-mark icon.
 
 Let's see what we get when we specify `MessageBoxIcon.Stop` and `MessageBoxButtons.RetryCancel`:
 
-![Fig05](images/fig05.png)
+![Fig05](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig05.png)
 
 **Figure 5.** Message box with **Retry** and **Cancel** buttons and a stop-sign icon.
 
 Finally, I bet you're really excited to see what a message box with a `MessageBoxIcons.Stop` icon and **Abort**, **Retry**, and **Ignore** buttons looks like:
 
-![Fig06](images/fig06.png)
+![Fig06](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig06.png)
 
 **Figure 6.** Message box with **Abort**, **Retry**, and **Ignore** buttons and a stop-sign icon.
 
 Here's a message box with an information icon and just an **OK** button, but with wider text:
 
-![Fig07](images/fig07.png)
+![Fig07](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig07.png)
 
 **Figure 7.** Message box with **OK** button and an information icon with wider, longer text.
 
@@ -92,19 +92,19 @@ See how it adjusts its size, just like the message box(es) that come with Window
 
 You're probably wondering what occurs if you specify a message that has very short text.  Well, I'll show you:
 
-![Fig08](images/fig08.png)
+![Fig08](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig08.png)
 
 **Figure 8.** Message box with **OK** button and an information icon with very short text.
 
 One nice feature of the default message boxes that ship with all copies of Microsoft Windows is the fact that they will also widen themselves if the caption is very very long, even if the message body text is not.  Our message box does this, too.  Here's an example of a message box with a very long caption, but short body text:
 
-![Fig09](images/fig09.png)
+![Fig09](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig09.png)
 
 **Figure 9.** Message box with **OK** button and an information icon with very long caption text.
 
 There is a cap on the width of the message box, though.  If the message body text is too long, the message box will be restricted in how wide it can grow.
 
-![Fig10](images/fig10.png)
+![Fig10](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig10.png)
 
 **Figure 10.** Message box with **Yes**, **No**, and **Cancel** buttons, a question-mark icon, and an information icon with very long body text.
 
@@ -112,7 +112,7 @@ You can override this cap by setting the `DarkMessageBoxMetrics.MaximumFormWidth
 
 The message box, just like the version that ships with Windows, also will make itself taller if you have long text in the body of the message box.  Here's an example of a message box with a very long body text, but short caption text:
 
-![Fig11](images/fig11.png)
+![Fig11](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig11.png)
 
 **Figure 11.** Message box with **OK** and **Cancel** buttons and an information icon with very long body text that makes it size itself taller to accommodate.
 
@@ -144,6 +144,7 @@ if (result == DialogResult.Yes)
     // Save logic here
 }
 ```
+**Listing 1.** Simple usage example of the `DarkMessageBox` class.
 
 You can even optionally pass in a reference to any class that implements `IWin32Window`, in the first parameter, to designate the parent window of the message box:
 
@@ -176,6 +177,7 @@ public class MainWindow : Form
     }
 }
 ```
+**Listing 2.** Usage example of the `DarkMessageBox` class with a parent window.
 
 ---
 
@@ -217,13 +219,13 @@ For demonstration purposes, `BartSimpsonTheme`, `CowabungaTheme`, and `Professio
 
 For example, here is what a message box displayed using the `BartSimpsonTheme` looks like:
 
-![Fig12](images/fig12.png)
+![Fig12](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig12.png)
 
 **Figure 12.** Bart Simpson`**`-themed message box.
 
 Here's what a message box, displaying using the colors and styles of the 1987 Teenage Mutant Ninja Turtles`*` cartoon, might look like, with a fun little 'Michelangelo' icon:
 
-![Fig13](images/fig13.png)
+![Fig13](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig13.png)
 
 **Figure 13.** Teenage Mutant Ninja Turtles`*`-themed message box.
 
@@ -231,7 +233,7 @@ And, FYI, the **Let's Quit While We're Ahead** is probably more like something t
 
 And, if we revert to the `ProfessionalDarkTheme`, the message box looks like this:
 
-![Fig14](images/fig14.png)
+![Fig14](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig14.png)
 
 **Figure 14.** Professional dark-themed message box.
 
@@ -244,6 +246,124 @@ This is done to ensure that the message box is always displayed correctly, regar
 If a particular theme has invalid value(s) for its property(ies), it will simply be suppressed, and the `ProfessionalDarkTheme` will be substituted instead.  
 
 Messages will be emitted to the **Debug** output window in Visual Studio telling you what setting is not correct, however.
+
+### System color theme
+
+For completeness' sake, I also included a `SystemColorTheme` class that uses the system colors for the message box.  This is useful if you want to use the same colors as the current Windows theme.  This theme is designed to make the `DarkMessageBox` look, feel, and behave as close to those of the original `System.Windows.Forms.MessageBox` as possible.
+
+A `SystemColorTheme` message box will look like this:
+
+![Fig15](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig15.png)
+
+**Figure 15.** System color-themed message box.
+
+The following unit test demonstrates how to use the `SystemColorTheme` class:
+
+```csharp
+    /// <summary>
+    /// Displays a <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> using the
+    /// System Color theme.
+    /// </summary>
+    /// <remarks>
+    /// This illustrates causing the appearance of the message box to exactly
+    /// match that of the system-provided message boxes using the
+    /// <see cref="T:xyLOGIX.DarkMessageBox.Themes.SystemColorTheme" /> class.
+    /// <para />
+    /// This is provided to illustrate how to make a
+    /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> look like the default.
+    /// </remarks>
+    [Test]
+    public void Show_DarkMessageBox_ThemedAsSystem()
+    {
+        // Apply the system color theme
+        DarkMessageBoxThemeManager.ApplyTheme(SystemColorTheme.Instance);
+
+        // Show a message box with the system theme
+        DarkMessageBox.Show(
+            @"The file 'C:\foo.txt' has been modified.\n\nDid you want to save your changes?", "System Theme Test",
+            MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation,
+            MessageBoxDefaultButton.Button2
+        );
+    }
+```
+**Listing 3.** Unit test that demonstrates how to use the `SystemColorTheme` class.
+
+Why would anyone use the `SystemColorTheme` class when the whole point of this NuGet package is to make dark-themed message boxes?  
+
+Well, the `SystemColorTheme` class is useful for testing purposes, and for those who want to use the same colors as the current Windows theme.  
+
+It is also useful for those who want to use the same colors as the original `System.Windows.Forms.MessageBox` class without having to change every point in your code that calls `DarkMessageBox` by hand.
+
+The `SystemColorTheme` class is also useful if your application implements a toggle between Light/Dark themes, you can simply also toggle between the `SystemColorTheme` and `ProfessionalDarkTheme`  once you've toggled the `Light` or `Dark` mode(s) in your application, respectively.  Perhaps you might say:
+
+```csharp
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using xyLOGIX.DarkMessageBox;
+
+namespace MyApp
+{
+    public class MainWindow
+    {
+        // Manages whether the currently open file has been modified.
+        public IsDirty { get; set; }
+
+        // perhaps this is a property of your main window class
+        // that stores the fully-qualified pathname of the currently-
+        // open file.
+        public string CurrentFileName { get; set; }
+
+        /* ... property that indicates whether the app is in Light or Dark mode ... */
+        public bool IsDarkMode { get; set; }
+
+        // perhaps this method is called with the click of a menu command
+        // or toolbar button
+        public void ToggleLightOrDarkMode()
+        {
+            // Toggle the theme
+            IsDarkMode = !IsDarkMode;
+
+            // Apply the appropriate message box theme
+            DarkMessageBoxThemeManager.ApplyTheme(
+                IsDarkMode
+                    ? ProfessionalDarkTheme.Instance
+                    : SystemColorTheme.Instance
+            );
+        }
+
+        /* or, you could do it on a case-by-case basis */
+
+        public void PromptUserToSave()
+        {
+            // If the current file isn't modified, then there 
+            // isn't a need to prompt the user to save their 
+            // changes.
+            if (!IsDirty) return;
+    
+            // Apply the appropriate theme
+            DarkMessageBoxThemeManager.ApplyTheme(
+                 IsDarkMode ? ProfessionalDarkTheme.Instance : SystemColorTheme.Instance
+            );
+
+            // Show a message box with the system theme
+            if (DialogResult.No.Equals(DarkMessageBox.Show(
+                  $@"The file '{CurrentFileName}' has been modified.\n\nDid you want to save your changes?", Application.ProductName,
+                  MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation,
+                  MessageBoxDefaultButton.Button2
+            )) return;
+
+            /* ... */
+            /* Save the file */
+            /* ... */
+        }
+    }
+}
+
+```
+**Listing 4.** Example of how to toggle between the `ProfessionalDarkTheme` and `SystemColorTheme` classes.
+
+One should note that it really is only necessary to call `DarkMessageBoxThemeManager.ApplyTheme` once, at the start of your application -- or, when you toggle between `Light` and `Dark` modes -- to set the theme for all message boxes in your application.  However, you can call it as many times as you like, and it will apply the theme you specify.  This may be handy if there are a few isolated message boxes that you want to have a different theme than the rest of your application.
 
 ---
 **NOTE:** To ensure elements from previous themes do not carry over to the next, each implementation of the `IDarkMessageBoxTheme.Apply` method MUST start out by calling the `DarkMessageBoxMetrics.Reset` method PRIOR to then customizing the look and feel of the message box.  Calling `DarkMessageBoxMetrics.Reset` resets the dialog style, colors, look, and feel to the default, professional dark theme.
