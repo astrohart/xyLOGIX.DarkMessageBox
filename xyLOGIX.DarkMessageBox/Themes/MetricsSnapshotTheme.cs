@@ -119,6 +119,13 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.DefaultButtonBorderColor;
 
         /// <summary>
+        /// A <see cref="T:System.Boolean" /> value that saves the current value of the
+        /// <see cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.FlatButtons" />
+        /// property.
+        /// </summary>
+        private readonly bool _flatButtons = DarkMessageBoxMetrics.FlatButtons;
+
+        /// <summary>
         /// A <see cref="T:System.Drawing.Color" /> value that saves the current value of
         /// the
         /// <see
@@ -245,6 +252,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.MaximumFormWidth = _maximumFormWidth;
             DarkMessageBoxMetrics.MinimumFormWidthMultiButton =
                 _minFormWidthMultiButton;
+            DarkMessageBoxMetrics.FlatButtons = _flatButtons;
             DarkMessageBoxMetrics.MinimumFormWidthSingleButton =
                 _minFormWidthSingleButton;
             DarkMessageBoxMetrics.RightMargin = _rightMargin;
