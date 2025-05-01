@@ -35,7 +35,11 @@ namespace xyLOGIX.DarkMessageBox.Themes
         /// Applies the theme to
         /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics" />.
         /// </summary>
-        public void Apply()
+        /// <remarks>
+        /// If this method is overriden, the base-class version must be called
+        /// first.
+        /// </remarks>
+        public virtual void Apply()
         {
             DarkMessageBoxMetrics.FormBackgroundColor =
                 SystemColors.Window; // typical window background
