@@ -48,8 +48,6 @@ Or via .NET CLI:
 nuget install xyLOGIX.DarkMessageBox
 ```
 
-[![Tip Jar](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/tip-jar.jpg)](https://buy.stripe.com/5kA4iz8j85lX9Pi6oo)
-
 ---
 
 ## ✨ Features
