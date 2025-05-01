@@ -24,7 +24,7 @@ The results are being distributed as this publicly-available NuGet package becau
 
 Believe it or not, every so often, a dark-themed WinForm or WPF app will be being written...and when it is, I hope this NuGet package proves useful.
 
-[![NuGet](https://img.shields.io/nuget/v/xyLOGIX.DarkMessageBox.svg?logo=nuget&style=flat)](https://www.nuget.org/packages/xyLOGIX.DarkMessageBox/)
+[![NuGet](https://img.shields.io/nuget/v/xyLOGIX.DarkMessageBox.svg?logo=nuget&style=flat)](https://www.nuget.org/packages/xyLOGIX.DarkMessageBox/1.0.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 As stated above, this NuGet package provides a fully customizable dark-themed replacement for `System.Windows.Forms.MessageBox`,  
