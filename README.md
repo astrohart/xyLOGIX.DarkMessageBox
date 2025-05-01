@@ -48,6 +48,10 @@ Or via .NET CLI:
 nuget install xyLOGIX.DarkMessageBox
 ```
 
+If you like this NuGet package, please use the tip jar to show your support:
+
+[![Donate](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/tip-jar.png)](https://buy.stripe.com/5kA4iz8j85lX9Pi6oo)
+
 ---
 
 ## ✨ Features
