@@ -226,7 +226,7 @@ namespace xyLOGIX.DarkMessageBox
                 DialogResult = result,
                 BackColor = DarkMessageBoxMetrics.ButtonBackgroundColor,
                 ForeColor = DarkMessageBoxMetrics.ButtonTextColor,
-                FlatStyle = FlatStyle.Flat,
+                FlatStyle = DarkMessageBoxMetrics.FlatButtons ? FlatStyle.Flat : FlatStyle.System,
                 Width = width,
                 Height = DarkMessageBoxMetrics.ButtonHeight
             };
