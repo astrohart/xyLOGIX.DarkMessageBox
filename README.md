@@ -240,21 +240,21 @@ Example theme classes are shown:
 
 For demonstration purposes, `BartSimpsonTheme`, `CowabungaTheme`, and `ProfessionalDarkTheme` classes are included with this codebase that you can use out-of-the-box.
 
-### Bart Simpson `**` theme
+### Bart Simpson `*` theme
 
 For example, here is what a message box displayed using the `BartSimpsonTheme` looks like:
 
 ![Fig12](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig12.png)
 
-**Figure 12.** Bart Simpson`**`-themed message box.
+**Figure 12.** Bart Simpson`*`-themed message box.
 
 ### Cowabunga theme
 
-Here's what a message box, displaying using the colors and styles of the 1987 Teenage Mutant Ninja Turtles`*` cartoon, might look like, with a fun little 'Michelangelo' icon:
+Here's what a message box, displaying using the colors and styles of the 1987 Teenage Mutant Ninja Turtles`**` cartoon, might look like, with a fun little 'Michelangelo' icon:
 
 ![Fig13](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/fig13.png)
 
-**Figure 13.** Teenage Mutant Ninja Turtles`*`-themed message box.
+**Figure 13.** Teenage Mutant Ninja Turtles`**`-themed message box.
 
 And, FYI, the **Let's Quit While We're Ahead** is probably more like something that Raphael would say, but I couldn't find a good icon for him.  So, I went with Michelangelo.  The message box is still themed to look like the TMNT cartoon, though.
 
@@ -436,9 +436,13 @@ This project is licensed under the [MIT License](LICENSE).
 Copyright © 2025 by Dr. Brian Curtis Hart xyLOGIX, LLC.  
 All rights reserved.  This project is hereby released and distributed under the terms of the MIT license.
 
-`*` Teenage Mutant Ninja Turtles™ and all related titles, logos, and characters are trademarks of Viacom International Inc. © Viacom International Inc. All rights reserved.  This article is for informational and commentary purposes only. No affiliation with or endorsement by Viacom International Inc. or Nickelodeon is implied.
+---
 
-`**` The Simpsons® and Bart Simpson® are trademarks of Twentieth Century Fox Film Corporation. They are used in this article solely for example and education purposes only, and for commentary, and are not affiliated with or endorsed by the author, nor is this work affiliated with, nor is endorsed by, Twentieth Century Fox Film Corporation. © 2024 Twentieth Century Fox Film Corporation. All rights reserved.  Fair use is asserted.
+## Lawyer-friendly fine print
+
+`*` The Simpsons® and Bart Simpson® are trademarks of Twentieth Century Fox Film Corporation. They are used in this article solely for example and education purposes only, and for commentary, and are not affiliated with or endorsed by the author, nor is this work affiliated with, nor is endorsed by, Twentieth Century Fox Film Corporation. © 2024 Twentieth Century Fox Film Corporation. All rights reserved.  Fair use is asserted.
+
+`**` Teenage Mutant Ninja Turtles™ and all related titles, logos, and characters are trademarks of Viacom International Inc. © Viacom International Inc. All rights reserved.  This article is for informational and commentary purposes only. No affiliation with or endorsement by Viacom International Inc. or Nickelodeon is implied.  Fair use is asserted.
 
 **Disclaimer.** All product names, logos, brands, characters, and registered or unregistered trademarks referenced in this publication remain the property of their respective owners. Use of these marks is for identification, commentary, or illustrative purposes only and does not imply any sponsorship, endorsement, or affiliation with the rightful trademark holders.
 
