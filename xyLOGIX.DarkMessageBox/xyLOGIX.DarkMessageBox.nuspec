@@ -9,7 +9,7 @@
         <authors>xyLOGIX</authors>
         <owners>Dr. Brian C. Hart and xyLOGIX, LLC</owners>
         <license type="expression">MIT</license>
-        <copyright>Copyright © 2025 by Dr. Brian C. Hart and xyLOGIX, LLC. All rights reserved.</copyright>
+        <copyright>Copyright © 2025 by Dr. Brian C. Hart and xyLOGIX, LLC.  All rights reserved.  This NuGet package is hereby made available under the MIT license.</copyright>
         <projectUrl>https://github.com/astrohart/xyLOGIX.DarkMessageBox</projectUrl>
         <repository type="git"
                     url="https://github.com/astrohart/xyLOGIX.DarkMessageBox.git" />
