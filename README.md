@@ -48,6 +48,8 @@ Or via .NET CLI:
 nuget install xyLOGIX.DarkMessageBox
 ```
 
+[![Tip Jar](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/tip-jar.jpg)](https://buy.stripe.com/5kA4iz8j85lX9Pi6oo)
+
 ---
 
 ## ✨ Features
@@ -248,6 +250,14 @@ For example, here is what a message box displayed using the `BartSimpsonTheme` l
 
 **Figure 12.** Bart Simpson`*`-themed message box.
 
+The example message box shown in **Figure 12** is displayed using the `BartSimpsonTheme` class, and isn't it something that Bart would totally say, instead of "File not found"?  
+
+The `BartSimpsonTheme` class is included in this NuGet package, in the `xyLOGIX.DarkMessageBox.Themes` namespace.  You can refer to it in your code via the static `BartSimpsonTheme.Instance` property.
+
+Furthermore, the `BartSimpsonTheme` class can be inherited, and its `Apply` method can be overridden to customize the look and feel of the message box even further.  This is useful if you want to create your own custom theme that is based on the `BartSimpsonTheme` class.
+
+Just remember, if you do override the `BartSimpsonTheme.Apply` method, to call the base-class version first.
+
 ### Cowabunga theme
 
 Here's what a message box, displaying using the colors and styles of the 1987 Teenage Mutant Ninja Turtles`**` cartoon, might look like, with a fun little 'Michelangelo' icon:
@@ -256,7 +266,17 @@ Here's what a message box, displaying using the colors and styles of the 1987 Te
 
 **Figure 13.** Teenage Mutant Ninja Turtles`**`-themed message box.
 
-And, FYI, the **Let's Quit While We're Ahead** is probably more like something that Raphael would say, but I couldn't find a good icon for him.  So, I went with Michelangelo.  The message box is still themed to look like the TMNT cartoon, though.
+And, FYI, the phrase **Let's Quit While We're Ahead**, which is used in place of **Cancel** is probably more like something that the 1987 version of Raphael might have said; but, I couldn't find a good icon for him.  So, I went with Michelangelo.  But Michelangelo can have all the fun!  The message box is still themed to look like the TMNT cartoon, though.
+
+This theme is included in this package as the `CowabungaTheme` class in the `xyLOGIX.DarkMessageBox.Themes` namespace.  You can refer to it in your code via the static `CowabungaTheme.Instance` property.
+
+Furthermore, the `CowabungaTheme` class can be inherited, and its `Apply` method can be overridden to customize the look and feel of the message box even further.  This is useful if you want to create your own custom theme that is based on the `CowabungaTheme` class.
+
+Just remember, if you do override the `CowabungaTheme.Apply` method, to call the base-class version first.
+
+Cowabunga!
+
+Now, let's see what the `ProfessionalDarkTheme` looks like.
 
 ### Professional dark theme
 
@@ -275,6 +295,12 @@ This is done to ensure that the message box is always displayed correctly, regar
 If a particular theme has invalid value(s) for its property(ies), it will simply be suppressed, and the `ProfessionalDarkTheme` will be substituted instead.  
 
 Messages will be emitted to the **Debug** output window in Visual Studio telling you what setting is not correct, however.
+
+This theme is included in this package as the `ProfessionalDarkTheme` class in the `xyLOGIX.DarkMessageBox.Themes` namespace.  You can refer to it in your code via the static `ProfessionalDarkTheme.Instance` property.
+
+Furthermore, the `ProfessionalDarkTheme` class can be inherited, and its `Apply` method can be overridden to customize the look and feel of the message box even further.  This is useful if you want to create your own custom theme that is based on the `ProfessionalDarkTheme` class.
+
+Just remember, if you do override the `ProfessionalDarkTheme.Apply` method, to call the base-class version first.
 
 ### System color theme
 
@@ -395,8 +421,19 @@ namespace MyApp
 
 One should note that it really is only necessary to call `DarkMessageBoxThemeManager.ApplyTheme` once, at the start of your application -- or, when you toggle between `Light` and `Dark` modes -- to set the theme for all message boxes in your application.  However, you can call it as many times as you like, and it will apply the theme you specify.  This may be handy if there are a few isolated message boxes that you want to have a different theme than the rest of your application.
 
+This theme is included in this package as the `SystemColorTheme` class in the `xyLOGIX.DarkMessageBox.Themes` namespace.  You can refer to it in your code via the static `SystemColorTheme.Instance` property.
+
+Furthermore, the `SystemColorTheme` class can be inherited, and its `Apply` method can be overridden to customize the look and feel of the message box even further.  This is useful if you want to create your own custom theme that is based on the `SystemColorTheme` class.
+
+Just remember, if you do override the `SystemColorTheme.Apply` method, to call the base-class version first.
+
+
 ---
-**NOTE:** To ensure elements from previous themes do not carry over to the next, each implementation of the `IDarkMessageBoxTheme.Apply` method MUST start out by calling the `DarkMessageBoxMetrics.Reset` method PRIOR to then customizing the look and feel of the message box.  Calling `DarkMessageBoxMetrics.Reset` resets the dialog style, colors, look, and feel to the default, professional dark theme.
+**NOTE:** To ensure elements from previous themes do not carry over to the next, each implementation of the `IDarkMessageBoxTheme.Apply` method MUST start out by calling the `DarkMessageBoxMetrics.Reset` method PRIOR to then customizing the look and feel of the message box.  
+
+Calling `DarkMessageBoxMetrics.Reset` resets the dialog style, colors, look, and feel to the default, professional dark theme. 
+
+Overrides of an `Apply` method from a derived class inheriting one of the theme(s) that ship with this NuGet package must call the base-class version first; it is not necessary to call the `DarkMessageBoxMetrics.Reset` method in this case, as the base-class version of `Apply` will do that for you.
 
 ---
 
