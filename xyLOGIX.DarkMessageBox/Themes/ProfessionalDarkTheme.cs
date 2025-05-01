@@ -7,7 +7,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
     /// A standard default theme for
     /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> dialogs.
     /// </summary>
-    public sealed class ProfessionalDarkTheme : IDarkMessageBoxTheme
+    public class ProfessionalDarkTheme : IDarkMessageBoxTheme
     {
         /// <summary>
         /// Empty, <c>static</c> constructor to prohibit direct allocation of this class.
@@ -32,7 +32,11 @@ namespace xyLOGIX.DarkMessageBox.Themes
         /// <summary>
         /// Applies the theme to <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics" />.
         /// </summary>
-        public void Apply()
+        /// <remarks>
+        /// If this method is overriden, the base-class version must be called
+        /// first.
+        /// </remarks>
+        public virtual void Apply()
             => DarkMessageBoxMetrics.Reset();
     }
 }
