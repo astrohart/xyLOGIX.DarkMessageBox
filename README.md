@@ -52,7 +52,7 @@ nuget install xyLOGIX.DarkMessageBox
 
 [![Donate](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/tip-jar.png)](https://buy.stripe.com/5kA4iz8j85lX9Pi6oo)
 
-This package is made available under the MIT license for free...but we value any and all tips, no matter how small.  Thank you for your support!
+This package is made available under the MIT license completely free of charge...but we value any and all tips, no matter how small.  Thank you for your support!
 
 ---
 
