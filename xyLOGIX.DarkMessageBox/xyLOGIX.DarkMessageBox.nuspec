@@ -46,7 +46,6 @@
               target="lib\net48\" />
         <file src="bin\Release\xyLOGIX.DarkMessageBox.md"
               target="lib\net48\" />
-        <file src="..\images\fig01.png" target="images\fig01.png" />
 
         <!-- optional: include LICENSE & README -->
         <file src="..\LICENSE"              target="LICENSE" />
