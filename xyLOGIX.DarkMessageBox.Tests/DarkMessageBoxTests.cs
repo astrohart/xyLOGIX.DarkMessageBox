@@ -115,6 +115,32 @@ namespace xyLOGIX.DarkMessageBox.Tests
             );
 
         /// <summary>
+        /// Displays a <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> using the
+        /// System Color theme.
+        /// </summary>
+        /// <remarks>
+        /// This illustrates causing the appearance of the message box to exactly
+        /// match that of the system-provided message boxes using the
+        /// <see cref="T:xyLOGIX.DarkMessageBox.Themes.SystemColorTheme" /> class.
+        /// <para />
+        /// This is provided to illustrate how to make a
+        /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> look like the default.
+        /// </remarks>
+        [Test]
+        public void Show_DarkMessageBox_ThemedAsSystem()
+        {
+            // Apply the system color theme
+            DarkMessageBoxThemeManager.ApplyTheme(SystemColorTheme.Instance);
+
+            // Show a message box with the system theme
+            DarkMessageBox.Show(
+                @"The file 'C:\foo.txt' has been modified.\n\nDid you want to save your changes?", "System Theme Test",
+                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation,
+                MessageBoxDefaultButton.Button2
+            );
+        }
+
+        /// <summary>
         /// Displays a <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> that
         /// automatically closes after
         /// a delay,
