@@ -11,7 +11,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
     /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" />
     /// dialogs.
     /// </summary>
-    public sealed class BartSimpsonTheme : IDarkMessageBoxTheme
+    public class BartSimpsonTheme : IDarkMessageBoxTheme
     {
         /// <summary>
         /// Empty, <c>static</c> constructor to prohibit direct allocation of this class.
@@ -37,7 +37,11 @@ namespace xyLOGIX.DarkMessageBox.Themes
         /// Applies the theme to
         /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics" />.
         /// </summary>
-        public void Apply()
+        /// <remarks>
+        /// If this method is overriden, the base-class version must be called
+        /// first.
+        /// </remarks>
+        public virtual void Apply()
         {
             DarkMessageBoxMetrics.FormBackgroundColor =
                 Color.FromArgb(255, 246, 163); // #FFF6A3
