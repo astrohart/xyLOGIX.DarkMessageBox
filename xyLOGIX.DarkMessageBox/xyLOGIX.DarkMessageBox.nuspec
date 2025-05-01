@@ -1,58 +1,53 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
-  <metadata>
-    <!-- BASIC INFO -->
-    <id>xyLOGIX.DarkMessageBox</id>
-    <version>1.0.0</version>
-    <authors>xyLOGIX</authors>
-    <owners>Dr. Brian C. Hart and xyLOGIX, LLC</owners>
-    <license type="expression">MIT</license>
-    <copyright>Copyright © 2025 by Dr. Brian C. Hart and xyLOGIX, LLC. All rights reserved.</copyright>
-    <projectUrl>https://github.com/astrohart/xyLOGIX.DarkMessageBox</projectUrl>
-    <iconUrl>https://github.com/astrohart/xyLOGIX.DarkMessageBox/blob/master/new-xylogix-logo.png</iconUrl>
-    <repository type="git"
-                url="https://github.com/astrohart/xyLOGIX.DarkMessageBox.git" />
-    <description>
-      A drop-in dark-themed replacement for `System.Windows.Forms.MessageBox`
-      that supports per-dialog theming, auto-close timers, and full Win10/11
-      title-bar dark-mode via Dark.Net.
-    </description>
-    <summary>
+    <metadata>
+        <!-- BASIC INFO -->
+        <id>xyLOGIX.DarkMessageBox</id>
+        <readme>README.md</readme>
+        <version>1.0.0</version>
+        <authors>xyLOGIX</authors>
+        <owners>Dr. Brian C. Hart and xyLOGIX, LLC</owners>
+        <license type="expression">MIT</license>
+        <copyright>Copyright © 2025 by Dr. Brian C. Hart and xyLOGIX, LLC. All rights reserved.</copyright>
+        <projectUrl>https://github.com/astrohart/xyLOGIX.DarkMessageBox</projectUrl>
+        <iconUrl>https://github.com/astrohart/xyLOGIX.DarkMessageBox/blob/master/new-xylogix-logo.png</iconUrl>
+        <repository type="git"
+                    url="https://github.com/astrohart/xyLOGIX.DarkMessageBox.git" />
+        <description>A drop-in dark-themed replacement for `System.Windows.Forms.MessageBox` that supports per-dialog theming, auto-close timers, and full Win10/11 title-bar dark-mode via Dark.Net.</description>
+        <summary>
       Dark-mode MessageBox for WinForms (.NET Framework 4.8, C# 7.3).
     </summary>
-    <tags>WinForms MessageBox DarkMode Dialog Theme</tags>
-    <releaseNotes>• Initial public release</releaseNotes>
+        <tags>WinForms MessageBox DarkMode Dialog Theme</tags>
+        <releaseNotes>• Initial public release</releaseNotes>
 
-    <!-- TARGETS & DEPENDENCIES -->
-    <dependencies>
-      <group targetFramework=".NETFramework4.8">
-        <dependency id="DarkNet" version="2.3.0" />
-        <dependency id="AlphaFS" version="2.2.6" />
-      </group>
-    </dependencies>
+        <!-- TARGETS & DEPENDENCIES -->
+        <dependencies>
+            <group targetFramework=".NETFramework4.8">
+                <dependency id="DarkNet" version="2.3.0" />
+                <dependency id="AlphaFS" version="2.2.6" />
+            </group>
+        </dependencies>
 
-    <!-- BUILD ACTION -->
-    <frameworkAssemblies>
-      <!-- WinForms & drawing APIs are in the framework; add for clarity -->
-      <frameworkAssembly assemblyName="System.Windows.Forms"
-                         targetFramework=".NETFramework4.8" />
-      <frameworkAssembly assemblyName="System.Drawing"
-                         targetFramework=".NETFramework4.8" />
-    </frameworkAssemblies>
-  </metadata>
+        <!-- BUILD ACTION -->
+        <frameworkAssemblies>
+            <!-- WinForms & drawing APIs are in the framework; add for clarity -->
+            <frameworkAssembly assemblyName="System.Windows.Forms"
+                               targetFramework=".NETFramework4.8" />
+            <frameworkAssembly assemblyName="System.Drawing"
+                               targetFramework=".NETFramework4.8" />
+        </frameworkAssemblies>
+    </metadata>
 
-  <!-- FILES TO SHIP -->
-  <files>
-    <!-- library DLL & XML docs -->
-    <file src="bin\Release\xyLOGIX.DarkMessageBox.dll"
-          target="lib\net48\" />
-    <file src="bin\Release\xyLOGIX.DarkMessageBox.xml"
-          target="lib\net48\" />
-    <file src="bin\Release\xyLOGIX.DarkMessageBox.md"
-          target="lib\net48\" />
+    <!-- FILES TO SHIP -->
+    <files>
+        <!-- library DLL & XML docs -->
+        <file src="bin\Release\xyLOGIX.DarkMessageBox.dll"
+              target="lib\net48\" />
+        <file src="bin\Release\xyLOGIX.DarkMessageBox.md"
+              target="lib\net48\" />
 
-    <!-- optional: include LICENSE & README -->
-    <file src="..\LICENSE"              target="" />
-    <file src="..\README.md"            target="" />
-  </files>
+        <!-- optional: include LICENSE & README -->
+        <file src="..\LICENSE"              target="LICENSE" />
+        <file src="..\README.md"            target="README.md" />
+    </files>
 </package>
