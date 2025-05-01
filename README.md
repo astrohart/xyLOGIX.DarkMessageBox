@@ -48,9 +48,11 @@ Or via .NET CLI:
 nuget install xyLOGIX.DarkMessageBox
 ```
 
-If you like this NuGet package, please use the tip jar to show your support:
+(Totally optional.) If you like this NuGet package, please use the tip jar to show your support:
 
 [![Donate](https://raw.githubusercontent.com/astrohart/xyLOGIX.DarkMessageBox/refs/heads/master/images/tip-jar.png)](https://buy.stripe.com/5kA4iz8j85lX9Pi6oo)
+
+This package is made available under the MIT license for free...but we value any and all tips, no matter how small.  Thank you for your support!
 
 ---
 
