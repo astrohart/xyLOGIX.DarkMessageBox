@@ -68,6 +68,7 @@
     <Compile Include="Themes\CowabungaTheme.cs" />
     <Compile Include="Themes\MetricsSnapshotTheme.cs" />
     <Compile Include="Themes\ProfessionalDarkTheme.cs" />
+    <Compile Include="Themes\SystemColorTheme.cs" />
     <Compile Include="Validators\DarkMessageBoxThemeValidator.cs" />
   </ItemGroup>
   <ItemGroup>
