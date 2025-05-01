@@ -348,6 +348,7 @@ namespace MyApp
 
             // Show a message box with the system theme
             if (DialogResult.No.Equals(DarkMessageBox.Show(
+                  this,
                   $@"The file '{CurrentFileName}' has been modified.\n\nDid you want to save your changes?", Application.ProductName,
                   MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation,
                   MessageBoxDefaultButton.Button2
