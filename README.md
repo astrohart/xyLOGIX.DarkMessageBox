@@ -1,15 +1,36 @@
 ﻿# xyLOGIX.DarkMessageBox
 
+A drop-in dark-themed replacement for `System.Windows.Forms.MessageBox` that supports per-dialog theming, auto-close timers, and full Win10/11 title-bar dark-mode via [DarkNet](https://www.nuget.org/packages/DarkNet/).
+
 ## Dark-Themed Message Box Library
+
+The idea for this project came about when I was writing an app for a client that was required to have a Dark theme.
+
+Then, a requirement came in to write code to use a `System.Windows.Forms.MessageBox` to prompt the user whether the user is sure they wanted to delete an item from a list.
+
+I tested it, and the dark mode application looked great, but then the system-provided message box showed up in a Light theme against the Dark-themed background, and hurt my eyes.
+
+I thought, "I can't have that!"
+
+After some Googling, it was not apparent that there are many resources out there for Dark-theming the system-provided message boxes; it was more like, "roll your own."
+
+The requirement was to roll my own Dark-theme message box that looked and felt as much like the system-provided message boxes as possible, but with a Dark theme.
+
+Therefore, it occurred to me to whip up this NuGet package.
+
+And then I also threw in some goodies as well!
+
+The results are being distributed as this publicly-available NuGet package because I want to share my findings with the world.  I hope you find it useful!
+
+Believe it or not, every so often, a dark-themed WinForm or WPF app will be being written...and when it is, I hope this NuGet package proves useful.
 
 [![NuGet](https://img.shields.io/nuget/v/xyLOGIX.DarkMessageBox.svg?logo=nuget&style=flat)](https://www.nuget.org/packages/xyLOGIX.DarkMessageBox/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-A fully customizable dark-themed replacement for `System.Windows.Forms.MessageBox`,  
-built for C# 7.3 and .NET Framework 4.8 Windows Forms 2.0 applications, and which behaves as closely as possible to the original `System.Windows.Forms.MessageBox` class.
+As stated above, this NuGet package provides a fully customizable dark-themed replacement for `System.Windows.Forms.MessageBox`,  
+built for C# 7.3, .NET Framework 4.8, and Windows Forms 2.0 applications, and which behaves as closely as possible to the original `System.Windows.Forms.MessageBox` class, otherwise.
 
-Supports runtime theming, customizable colors and fonts, dynamic titlebar styling,  
-default button highlighting, and full visual consistency with native Windows dialogs.
+Supports runtime theming, customizable colors and fonts, dynamic titlebar styling, default button highlighting, and full visual consistency with native Windows message boxes.
 
 ---
 
@@ -192,7 +213,9 @@ You know, the standard Win32 `MessageBox` message boxes really do not leave a wh
 
 * Set it to automatically close after a certain number of milliseconds; 
 * Override the message box body icon that is displayed next to the body with your own custom icon (or display none at all);
-* Give the message box _window_ its own corresponding icon and even make it appear in the Taskbar.  This can be useful, say, when you are displaying the message box during app startup but before the main application window has appeared.  This allows users to find your message box in the Z-order or via `ALT+TAB`;
+* Give the message box _window_ its own corresponding icon and even make it appear in the Taskbar.  
+    * This can be useful, say, when you are displaying the message box during app startup but before the main application window has appeared.
+    * This allows users to find your message box easily by clicking its Taskbar icon without having to resort to `ALT+TAB`;
 * Customize button text, message content text, titlebar, background, and footer colors; and
 * Set the `DarkMessageBoxMetrics.TitleBarIsLight` property to make the titlebar be light or dark;
 
