@@ -3,6 +3,7 @@
     <metadata>
         <!-- BASIC INFO -->
         <id>xyLOGIX.DarkMessageBox</id>
+        <icon>new-xylogix-logo.png</icon>
         <readme>README.md</readme>
         <version>1.0.0</version>
         <authors>xyLOGIX</authors>
@@ -10,7 +11,6 @@
         <license type="expression">MIT</license>
         <copyright>Copyright © 2025 by Dr. Brian C. Hart and xyLOGIX, LLC. All rights reserved.</copyright>
         <projectUrl>https://github.com/astrohart/xyLOGIX.DarkMessageBox</projectUrl>
-        <iconUrl>https://github.com/astrohart/xyLOGIX.DarkMessageBox/blob/master/new-xylogix-logo.png</iconUrl>
         <repository type="git"
                     url="https://github.com/astrohart/xyLOGIX.DarkMessageBox.git" />
         <description>A drop-in dark-themed replacement for `System.Windows.Forms.MessageBox` that supports per-dialog theming, auto-close timers, and full Win10/11 title-bar dark-mode via Dark.Net.</description>
@@ -41,6 +41,7 @@
     <!-- FILES TO SHIP -->
     <files>
         <!-- library DLL & XML docs -->
+        <file src="..\new-xylogix-logo.png" target="new-xylogix-logo.png" />
         <file src="bin\Release\xyLOGIX.DarkMessageBox.dll"
               target="lib\net48\" />
         <file src="bin\Release\xyLOGIX.DarkMessageBox.md"
