@@ -233,6 +233,16 @@ namespace xyLOGIX.DarkMessageBox
         } = 2;
 
         /// <summary>
+        /// Gets or sets a value indicating whether the buttons are to be rendered as
+        /// <c>Flat</c> (true) or <c>System</c> (false).
+        /// </summary>
+        public static bool FlatButtons
+        {
+            [DebuggerStepThrough] get;
+            [DebuggerStepThrough] set;
+        } = true;
+
+        /// <summary>
         /// Gets or sets a <see cref="T:System.Drawing.Color" /> value that
         /// specifies the background color of the footer strip that holds the buttons.
         /// </summary>
@@ -515,6 +525,7 @@ namespace xyLOGIX.DarkMessageBox
             ButtonSpacing = 6;
             ButtonWidth = 87;
             DefaultButtonBorderThickness = 2;
+            FlatButtons = true;
             FormFooterHeight = 42;
             MaximumFormWidth = 600;
             MinimumFormWidthMultiButton = 284;
