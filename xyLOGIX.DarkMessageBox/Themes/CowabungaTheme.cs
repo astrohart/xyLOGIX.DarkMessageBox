@@ -7,9 +7,10 @@ using xyLOGIX.DarkMessageBox.Properties;
 namespace xyLOGIX.DarkMessageBox.Themes
 {
     /// <summary>
-    /// A "Cowabunga Dude" theme for <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> dialogs.
+    /// A "Cowabunga Dude" theme for
+    /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBox" /> dialogs.
     /// </summary>
-    public sealed class CowabungaTheme : IDarkMessageBoxTheme
+    public class CowabungaTheme : IDarkMessageBoxTheme
     {
         /// <summary>
         /// Empty, <c>static</c> constructor to prohibit direct allocation of this class.
@@ -32,16 +33,21 @@ namespace xyLOGIX.DarkMessageBox.Themes
         } = new CowabungaTheme();
 
         /// <summary>
-        /// Applies the theme to <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics" />.
+        /// Applies the theme to
+        /// <see cref="T:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics" />.
         /// </summary>
-        public void Apply()
+        /// <remarks>
+        /// If this method is overriden, the base-class version must be called
+        /// first.
+        /// </remarks>
+        public virtual void Apply()
         {
             DarkMessageBoxMetrics.Reset();
 
             DarkMessageBoxMetrics.FormBackgroundColor =
-                Color.FromArgb(88,136,245);
+                Color.FromArgb(88, 136, 245);
             DarkMessageBoxMetrics.FooterBackgroundColor =
-                Color.FromArgb(213,99,44);
+                Color.FromArgb(213, 99, 44);
             DarkMessageBoxMetrics.ButtonBackgroundColor = Color.DarkSeaGreen;
             DarkMessageBoxMetrics.ButtonTextColor = Color.Black;
             DarkMessageBoxMetrics.ButtonBorderColor = Color.MediumSeaGreen;
