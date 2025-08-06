@@ -17,9 +17,9 @@ namespace xyLOGIX.DarkMessageBox.Themes
         static SystemColorTheme() { }
 
         /// <summary>
-        /// Empty, protected constructor to prohibit direct allocation of this class.
+        /// Empty, private constructor to prohibit direct allocation of this class.
         /// </summary>
-        protected SystemColorTheme() { }
+        private SystemColorTheme() { }
 
         /// <summary>
         /// Gets a reference to the one and only instance of the object that implements the
