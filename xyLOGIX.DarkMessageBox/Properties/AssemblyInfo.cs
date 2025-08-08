@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // If this project is exposed to COM, the following GUID is used
-[assembly: Guid("6bf60088-8294-4aad-8518-8345d0d18324")]
+[assembly: Guid("6ea64a52-e25c-481d-b484-5f62923fd2a0")]
 
 // Assembly versioning
 [assembly: AssemblyVersion("1.0.1.0")]
