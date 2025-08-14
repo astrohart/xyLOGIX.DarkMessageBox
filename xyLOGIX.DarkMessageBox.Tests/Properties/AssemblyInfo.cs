@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("xyLOGIX, LLC")]
 [assembly: AssemblyProduct("Unit Tests Library for the xyLOGIX Dark-Themed and Skinnable MessageBox Replacement Component")]
-[assembly: AssemblyCopyright("Copyright © xyLOGIX, LLC 2025")]
+[assembly: AssemblyCopyright("Copyright © 2025 by xyLOGIX, LLC.  All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
