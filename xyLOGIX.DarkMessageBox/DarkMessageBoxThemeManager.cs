@@ -70,7 +70,7 @@ namespace xyLOGIX.DarkMessageBox
 
         /// <summary>
         /// Applies <paramref name="theme" />, runs <paramref name="action" />,
-        /// then reverts to the previous theme – even if an exception is thrown.
+        /// then reverts to the previous theme ? even if an exception is thrown.
         /// </summary>
         public static void WithTemporaryTheme(
             IDarkMessageBoxTheme theme,
