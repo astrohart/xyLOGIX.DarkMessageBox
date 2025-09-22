@@ -1,4 +1,5 @@
-﻿using Dark.Net;
+﻿using PostSharp.Patterns.Diagnostics;
+using Dark.Net;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -585,7 +586,7 @@ namespace xyLOGIX.DarkMessageBox
         /// A <see cref="T:System.Windows.Forms.FormClosedEventArgs" />
         /// that contains the event data.
         /// </param>
-        protected override void OnFormClosed(FormClosed[NotLogged] EventArgs e)
+        protected override void OnFormClosed([NotLogged] FormClosedEventArgs e)
         {
             base.OnFormClosed(e);
 
@@ -630,7 +631,7 @@ namespace xyLOGIX.DarkMessageBox
         /// A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that
         /// contains the event data.
         /// </param>
-        protected override void OnKeyDown(Key[NotLogged] EventArgs e)
+        protected override void OnKeyDown([NotLogged] KeyEventArgs e)
         {
             base.OnKeyDown(e);
 
@@ -693,7 +694,7 @@ namespace xyLOGIX.DarkMessageBox
         /// This method controls the painting of an individual button in the
         /// footer panel.
         /// </remarks>
-        private void OnPaintButton([NotLogged] object sender, Paint[NotLogged] EventArgs e)
+        private void OnPaintButton([NotLogged] object sender, [NotLogged] PaintEventArgs e)
         {
             if (!(sender is Button btn) || AcceptButton != btn) return;
 
