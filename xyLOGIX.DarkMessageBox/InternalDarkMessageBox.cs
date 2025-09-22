@@ -585,7 +585,7 @@ namespace xyLOGIX.DarkMessageBox
         /// A <see cref="T:System.Windows.Forms.FormClosedEventArgs" />
         /// that contains the event data.
         /// </param>
-        protected override void OnFormClosed(FormClosedEventArgs e)
+        protected override void OnFormClosed(FormClosed[NotLogged] EventArgs e)
         {
             base.OnFormClosed(e);
 
@@ -612,7 +612,7 @@ namespace xyLOGIX.DarkMessageBox
         /// Called when the underlying Win32 handle has been created.
         /// </summary>
         /// <param name="e">Event data.</param>
-        protected override void OnHandleCreated(EventArgs e)
+        protected override void OnHandleCreated([NotLogged] EventArgs e)
         {
             base.OnHandleCreated(e);
 
@@ -630,7 +630,7 @@ namespace xyLOGIX.DarkMessageBox
         /// A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that
         /// contains the event data.
         /// </param>
-        protected override void OnKeyDown(KeyEventArgs e)
+        protected override void OnKeyDown(Key[NotLogged] EventArgs e)
         {
             base.OnKeyDown(e);
 
@@ -666,7 +666,7 @@ namespace xyLOGIX.DarkMessageBox
         /// An <see cref="T:System.EventArgs" /> that contains the event
         /// data.
         /// </param>
-        protected override void OnLoad(EventArgs e)
+        protected override void OnLoad([NotLogged] EventArgs e)
         {
             base.OnLoad(e);
 
@@ -693,7 +693,7 @@ namespace xyLOGIX.DarkMessageBox
         /// This method controls the painting of an individual button in the
         /// footer panel.
         /// </remarks>
-        private void OnPaintButton(object sender, PaintEventArgs e)
+        private void OnPaintButton([NotLogged] object sender, Paint[NotLogged] EventArgs e)
         {
             if (!(sender is Button btn) || AcceptButton != btn) return;
 
@@ -962,7 +962,7 @@ namespace xyLOGIX.DarkMessageBox
         /// A <see cref="T:System.EventArgs" /> that contains the event
         /// data.
         /// </param>
-        protected override void OnShown(EventArgs e)
+        protected override void OnShown([NotLogged] EventArgs e)
         {
             base.OnShown(e);
 
@@ -996,7 +996,7 @@ namespace xyLOGIX.DarkMessageBox
         /// <see cref="T:System.Windows.Forms.Timer" /> component, stopping it, and then
         /// closing this message box.
         /// </remarks>
-        private void OnTimerTick(object sender, EventArgs e)
+        private void OnTimerTick([NotLogged] object sender, [NotLogged] EventArgs e)
         {
             // Stop the timer.
             if (_timer == null) return;
