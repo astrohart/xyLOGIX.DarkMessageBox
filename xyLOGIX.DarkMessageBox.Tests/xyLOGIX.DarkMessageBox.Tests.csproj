@@ -1,91 +1,145 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-16"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\NUnit.4.3.2\build\NUnit.props" Condition="Exists('..\packages\NUnit.4.3.2\build\NUnit.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-  <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-  <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-  <ProjectGuid>{2E1BCC23-9769-4CB3-9DBB-11F3B2653873}</ProjectGuid>
-  <OutputType>Library</OutputType>
-  <AppDesignerFolder>Properties</AppDesignerFolder>
-  <RootNamespace>xyLOGIX.DarkMessageBox.Tests</RootNamespace>
-  <AssemblyName>xyLOGIX.DarkMessageBox.Tests</AssemblyName>
-  <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-  <FileAlignment>512</FileAlignment>
-  <Deterministic>true</Deterministic>
-  <NuGetPackageImportStamp>
-  </NuGetPackageImportStamp>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E1BCC23-9769-4CB3-9DBB-11F3B2653873}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xyLOGIX.DarkMessageBox.Tests</RootNamespace>
+    <AssemblyName>xyLOGIX.DarkMessageBox.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-  <DebugSymbols>true</DebugSymbols>
-  <DebugType>full</DebugType>
-  <Optimize>false</Optimize>
-  <OutputPath>bin\Debug\</OutputPath>
-  <DefineConstants>DEBUG;TRACE</DefineConstants>
-  <ErrorReport>prompt</ErrorReport>
-  <Prefer32Bit>false</Prefer32Bit>
-  <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\xyLOGIX.DarkMessageBox.Tests.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-  <DebugType>pdbonly</DebugType>
-  <Optimize>true</Optimize>
-  <OutputPath>bin\Release\</OutputPath>
-  <DefineConstants>TRACE</DefineConstants>
-  <ErrorReport>prompt</ErrorReport>
-  <Prefer32Bit>false</Prefer32Bit>
-  <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\xyLOGIX.DarkMessageBox.Tests.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-  <Reference Include="nunit.framework, Version=4.3.2.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-    <HintPath>..\packages\NUnit.4.3.2\lib\net462\nunit.framework.dll</HintPath>
-  </Reference>
-  <Reference Include="nunit.framework.legacy, Version=4.3.2.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-    <HintPath>..\packages\NUnit.4.3.2\lib\net462\nunit.framework.legacy.dll</HintPath>
-  </Reference>
-  <Reference Include="System" />
-  <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Core" />
-  <Reference Include="System.Drawing" />
-  <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Numerics" />
-  <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
-  </Reference>
-  <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Windows.Forms" />
+    <Reference Include="nunit.framework, Version=4.3.2.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.4.3.2\lib\net462\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework.legacy, Version=4.3.2.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.4.3.2\lib\net462\nunit.framework.legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-  <Compile Include="DarkMessageBoxTests.cs" />
-  <Compile Include="Properties\AssemblyInfo.cs" />
-  <Compile Include="WindowsFormsTestEnvironmentSetup.cs" />
+    <Compile Include="DarkMessageBoxTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsTestEnvironmentSetup.cs" />
   </ItemGroup>
   <ItemGroup>
-  <None Include="app.config" />
-  <None Include="packages.config" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-  <ProjectReference Include="..\xyLOGIX.DarkMessageBox\xyLOGIX.DarkMessageBox.csproj">
-    <Project>{83898a2f-b7ef-4082-828e-720f63f54c33}</Project>
-    <Name>xyLOGIX.DarkMessageBox</Name>
-  </ProjectReference>
+    <ProjectReference Include="..\xyLOGIX.DarkMessageBox\xyLOGIX.DarkMessageBox.csproj">
+      <Project>{83898a2f-b7ef-4082-828e-720f63f54c33}</Project>
+      <Name>xyLOGIX.DarkMessageBox</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
   <PropertyGroup>
-    <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    <PreBuildEvent>SET "_PROJECT_DIR=$(ProjectDir.TrimEnd('\'))"
+SET "_SOLUTION_DIR=$(SolutionDir.TrimEnd('\'))"
+SET "GENERATED_README_FILE_PATH=$(TargetDir)$(TargetName).md"
+SET "PROJECT_README_FILE_PATH=$(ProjectDir)README.md"
+ECHO Checking whether the markdown file generated by Vsxmd exists...
+IF NOT EXIST "%25GENERATED_README_FILE_PATH%25" GOTO GENERATED_README_FILE_NOT_FOUND
+IF EXIST "%25GENERATED_README_FILE_PATH%25" GOTO GENERATED_README_FILE_FOUND
+:GENERATED_README_FILE_NOT_FOUND
+ECHO Could not locate the file "%25GENERATED_README_FILE_PATH%25".
+GOTO AFTER_README
+:GENERATED_README_FILE_FOUND
+ECHO *** SUCCESS *** Found the markdown file generated by Vsxmd.
+ECHO Updating the README.md file for the project...
+COPY /Y "%25GENERATED_README_FILE_PATH%25" "%25PROJECT_README_FILE_PATH%25"
+ECHO Checking whether the file "%25PROJECT_README_FILE_PATH%25" exists...
+IF NOT EXIST "%25PROJECT_README_FILE_PATH%25" GOTO PROJECT_README_FILE_NOT_FOUND
+IF EXIST "%25PROJECT_README_FILE_PATH%25" GOTO PROJECT_README_FILE_FOUND
+:PROJECT_README_FILE_NOT_FOUND
+ECHO Did not find the file "%25PROJECT_README_FILE_PATH%25".  It's supposed to exist.
+GOTO AFTER_README
+:PROJECT_README_FILE_FOUND
+ECHO *** SUCCESS *** The file "%25PROJECT_README_FILE_PATH%25" was found.
+:AFTER_README
+ECHO *** DONE *** with pre-build event for project $(ProjectName).
+SET ERRORLEVEL=0</PreBuildEvent>
   </PropertyGroup>
-  <Error Condition="!Exists('..\packages\NUnit.4.3.2\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.4.3.2\build\NUnit.props'))" />
+  <PropertyGroup>
+    <PostBuildEvent>SET "_TARGET_DIR=$(TargetDir)"
+SET "CONFIGURATION_NAME=$(ConfigurationName)"
+SET "GENERATED_XML_DOC_FILE_PATH=%25_TARGET_DIR%25$(TargetName).xml"
+SET "PROJECT_README_FILE_PATH=$(ProjectDir)README.md"
+ECHO Checking whether this is a Release build...
+IF "%25CONFIGURATION_NAME%25"=="Release" GOTO ERASE_NONESSENTIAL_RELEASE_BUILD_OUTPUT_FILES
+ECHO Not a Release build.  Stopping post-build event at this point.
+GOTO FINALIZATION
+:ERASE_NONESSENTIAL_RELEASE_BUILD_OUTPUT_FILES
+ECHO This is a Release build.  Removing unneeded output files...
+ECHO Clearing the output folder of all nonessential files...
+IF EXIST "%25_TARGET_DIR%25*.pdb" ERASE /F /S /Q "%25_TARGET_DIR%25*.pdb"
+IF EXIST "%25_TARGET_DIR%25*.pspdb" ERASE /F /S /Q "%25_TARGET_DIR%25*.pspdb"
+IF EXIST "%25_TARGET_DIR%25*.vshost.exe" ERASE /F /S /Q "%25_TARGET_DIR%25*.vshost.exe"
+IF EXIST "%25GENERATED_XML_DOC_FILE_PATH%25" ATTRIB +R "%25GENERATED_XML_DOC_FILE_PATH%25"
+IF EXIST "%25PROJECT_README_FILE_PATH%25" ATTRIB +R "%25PROJECT_README_FILE_PATH%25"
+IF EXIST "%25_TARGET_DIR%25*.xml" ERASE /F /S /Q "%25_TARGET_DIR%25*.xml"
+IF EXIST "%25GENERATED_XML_DOC_FILE_PATH%25" ATTRIB -R "%25GENERATED_XML_DOC_FILE_PATH%25"
+IF EXIST "%25PROJECT_README_FILE_PATH%25" ATTRIB -R "%25PROJECT_README_FILE_PATH%25"
+GOTO FINALIZATION
+:FINALIZATION
+ECHO *** DONE *** with post-build script.
+SET ERRORLEVEL=0
+</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.4.3.2\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.4.3.2\build\NUnit.props'))" />
   </Target>
 </Project>
