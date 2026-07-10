@@ -57,14 +57,14 @@ namespace xyLOGIX.DarkMessageBox.Themes
         private readonly Color _btnText = DarkMessageBoxMetrics.ButtonTextColor;
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.ButtonHeight" />
         /// property.
         /// </summary>
         private readonly int _buttonHeight = DarkMessageBoxMetrics.ButtonHeight;
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.ButtonSpacing" />
         /// property.
         /// </summary>
@@ -72,7 +72,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.ButtonSpacing;
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.ButtonWidth" />
         /// property.
         /// </summary>
@@ -90,7 +90,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             );
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see
         ///     cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.DefaultButtonBorderThickness" />
         /// property.
@@ -145,7 +145,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.FormBackgroundColor;
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.FormFooterHeight" />
         /// property.
         /// </summary>
@@ -162,7 +162,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.HighlightDefaultButtonBackground;
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.MaximumFormWidth" />
         /// property.
         /// </summary>
@@ -170,7 +170,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.MaximumFormWidth;
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see
         ///     cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.MinimumFormWidthMultiButton" />
         /// property.
@@ -179,7 +179,7 @@ namespace xyLOGIX.DarkMessageBox.Themes
             DarkMessageBoxMetrics.MinimumFormWidthMultiButton;
 
         /// <summary>
-        /// A <see cref="T:System.Int32" /> value that saves the current value of the
+        /// An <see cref="T:System.Int32" /> value that saves the current value of the
         /// <see
         ///     cref="P:xyLOGIX.DarkMessageBox.DarkMessageBoxMetrics.MinimumFormWidthSingleButton" />
         /// property.
