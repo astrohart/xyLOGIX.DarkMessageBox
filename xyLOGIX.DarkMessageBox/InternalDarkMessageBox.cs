@@ -960,7 +960,7 @@ namespace xyLOGIX.DarkMessageBox
 
         /// <summary>Raises the <see cref="E:System.Windows.Forms.Form.Shown" /> event.</summary>
         /// <param name="e">
-        /// A <see cref="T:System.EventArgs" /> that contains the event
+        /// An <see cref="T:System.EventArgs" /> that contains the event
         /// data.
         /// </param>
         protected override void OnShown([NotLogged] EventArgs e)
@@ -989,7 +989,7 @@ namespace xyLOGIX.DarkMessageBox
         /// event.
         /// </param>
         /// <param name="e">
-        /// A <see cref="T:System.EventArgs" /> that contains the event
+        /// An <see cref="T:System.EventArgs" /> that contains the event
         /// data.
         /// </param>
         /// <remarks>
